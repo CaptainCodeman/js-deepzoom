@@ -1,7 +1,8 @@
 {
   "name": "@captaincodeman/deepzoom",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "DeepZoom Calculation engine",
+  "main": "index.cjs",
   "module": "index.js",
   "types": "index.d.ts",
   "scripts": {
