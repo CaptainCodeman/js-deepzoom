@@ -1,15 +1,14 @@
 {
   "name": "@captaincodeman/deepzoom",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "DeepZoom Calculation engine",
-  "main": "index.cjs",
   "module": "index.js",
   "types": "index.d.ts",
+  "type": "module",
   "scripts": {
-    "build": "tsc --module es2015 --declaration",
-    "bundle": "rollup -c",
-    "test": "mocha",
-    "mypublish:pre": "npm run build && npm run bundle && cp readme.md package.json dist",
+    "build": "tsc --module es2015 --declaration --allowJs false",
+    "test": "mocha --experimental-modules",
+    "mypublish:pre": "npm run build && cp readme.md package.json dist",
     "mypublish": "npm run mypublish:pre && npm publish dist --tag latest --access=public"
   },
   "repository": {
@@ -23,18 +22,16 @@
   },
   "homepage": "https://github.com/CaptainCodeman/js-deepzoom#readme",
   "devDependencies": {
-    "@types/chai": "^4.2.0",
+    "@types/chai": "^4.2.2",
     "@types/mocha": "^5.2.7",
     "chai": "^4.2.0",
+    "esm": "^3.2.25",
     "mocha": "^6.2.0",
-    "rollup": "^1.20.3",
-    "rollup-plugin-node-resolve": "^5.2.0",
-    "rollup-plugin-typescript": "^1.0.1",
     "ts-node": "^8.3.0",
-    "typescript": "^3.6.2"
+    "typescript": "^3.6.3"
   },
   "dependencies": {
-    "@captaincodeman/geometry": "^1.0.1",
+    "@captaincodeman/geometry": "^1.0.2",
     "tslib": "^1.10.0"
   }
 }

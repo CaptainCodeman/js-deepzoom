@@ -1,4 +1,5 @@
-import { Rect, Point } from "@captaincodeman/geometry";
+import { Point } from "@captaincodeman/geometry/point";
+import { Rect } from "@captaincodeman/geometry/rect";
 import { Layer } from "./layer";
 
 export class Deepzoom { 

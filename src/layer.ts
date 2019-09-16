@@ -1,6 +1,7 @@
 import { Tile } from "./tile";
 import { Deepzoom } from "./deepzoom";
-import { Rect, Point } from '@captaincodeman/geometry';
+import { Point } from '@captaincodeman/geometry/point';
+import { Rect } from '@captaincodeman/geometry/rect';
 
 export class Layer {
   readonly scale: number
